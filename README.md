@@ -164,7 +164,7 @@ Portfólio
 
 GitHub
 
-🔗 https://www.linkedin.com/feed/
+🔗 https://github.com/paulopkj/paulopkj.git
 
 Instagram
 
