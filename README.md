@@ -2,8 +2,6 @@
 
 <p align="center">
 
-<img src="./assets/imagens/img-pagina.png" alt="Logo do Projeto" width="180">
-
 </p>
 
 <p align="center">
@@ -18,11 +16,7 @@ Projeto desenvolvido com foco em uma Landing Page moderna, elegante, responsiva 
 
 🔗 **Projeto Online**
 
-> (Adicionar o link da Vercel após a publicação)
-
-```
-https://seu-projeto.vercel.app
-```
+https://salao-de-beleza-plus.vercel.app/
 
 ---
 
@@ -30,9 +24,9 @@ https://seu-projeto.vercel.app
 
 > Adicione uma captura de tela do projeto.
 
-```
-assets/preview.pn
-```
+<img src="./assets/imagens/img-pagina.png" alt="Logo do Projeto" width="680">
+
+<img width="680" height="420" alt="Imagem do Projeto" src="https://github.com/user-attachments/assets/b7a60636-af75-4217-96b2-ae612bd9eb59" />
 
 ---
 
@@ -162,15 +156,19 @@ Desenvolvedor Front-End em formação.
 
 LinkedIn
 
-> Adicione seu link
+🔗 https://linkedin.com/in/fullstack-paulo-ricardo
+
+Portfólio 
+
+🔗 https://portfolio-paulo-ricardo.vercel.app/
 
 GitHub
 
-> https://github.com/paulopkj
+🔗 https://www.linkedin.com/feed/
 
 Instagram
 
-> Adicione seu Instagram profissional
+🔗 https://www.instagram.com/paulokeys.dev?igsh=NDZoYzR4Yzc3YWg5&utm_source=qr
 
 ---
 
