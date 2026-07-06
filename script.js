@@ -29,6 +29,54 @@ navLinks.forEach((link) => {
 });
 
 /* ========================
+   CONTADOR ANIMADO / HERO
+========================= */
+
+/* === Elementos === */
+
+const counters = document.querySelectorAll(".counter");
+const counterStars = document.querySelectorAll(".counter-star");
+const counterPercents = document.querySelectorAll(".counter-percent");
+
+/* === Função === */
+
+function animateCounter(elements, suffix = "", prefix = "") {
+    elements.forEach((counter) => {
+        const target = Number(counter.dataset.target);
+
+        let current = 0;
+
+        const increment = Math.ceil(target / 300);
+
+        const updateCounter = () => {
+            current += increment;
+
+            if (current >= target) {
+                counter.textContent = `${prefix}${target}${suffix}`;
+
+                return;
+            }
+
+            counter.textContent = `${prefix}${current}${suffix}`;
+
+            requestAnimationFrame(updateCounter);
+        };
+
+        updateCounter();
+    });
+}
+
+/* === Inicialização === */
+
+window.addEventListener("load", () => {
+    animateCounter(counters, "", "+");
+
+    animateCounter(counterStars, "★");
+
+    animateCounter(counterPercents, "%");
+});
+
+/* ========================
    HEADER STICKY
 ========================= */
 
@@ -173,4 +221,22 @@ window.addEventListener("scroll", activeMenu);
 
 window.addEventListener("load", activeMenu);
 
+/* ========================
+   VÍDEOS / REPRODUÇÃO ÚNICA
+========================= */
 
+/* === Elementos === */
+
+const videos = document.querySelectorAll(".video-card video");
+
+/* === Eventos === */
+
+videos.forEach((video) => {
+    video.addEventListener("play", () => {
+        videos.forEach((item) => {
+            if (item !== video) {
+                item.pause();
+            }
+        });
+    });
+});

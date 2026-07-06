@@ -625,6 +625,50 @@ Pegando as classes: ( .hero-buttons ) e ( .btn ) === */
 }
 
 /* ========================
+   VÍDEOS
+========================= */
+
+/* === Seção Vídeos === */
+
+.videos {
+    background-color: #fdf8fb;
+}
+
+/* === Grid dos Vídeos === */
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* === Card do Vídeo === */
+
+.video-card {
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.35s;
+}
+
+/* === Hover do Card === */
+
+.video-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* === Vídeo === */
+
+.video-card video {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+/* ========================
    CTA
 ========================= */
 
@@ -748,7 +792,7 @@ Pegando as classes: ( .hero-buttons ) e ( .btn ) === */
 /* === Logo e descrição === */
 
 .footer-brand img {
-     display: block;
+    display: block;
     width: 90px;
     margin: 0 auto;
 }
@@ -793,27 +837,31 @@ Pegando as classes: ( .hero-buttons ) e ( .btn ) === */
     display: flex;
     flex-direction: column;
     gap: 12px;
+    transition: all 1.35s ease;
 }
 
 /* === Links das redes sociais === */
 
-.footer-social{
+.footer-social {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.footer-social h3{
+.footer-social h3 {
     font-size: 1.2rem;
     color: #0804f4;
 }
 
-.social-links a{
+.social-links a {
     text-decoration: none;
 }
 
-
+.social-links a:hover {
+    color: #d63384;
+    transform: translateY(-6px);
+}
 
 /* === Rodapé inferior
 Pegando as classes: ( .footer ) e ( .footer-bottom ) === */
@@ -829,6 +877,63 @@ Pegando as classes: ( .footer ) e ( .footer-bottom ) === */
 .footer-bottom p {
     margin-bottom: 10px;
     color: #cccccc;
+}
+
+/* ========================
+   WHATSAPP FLUTUANTE / BOTÃO FIXO
+========================= */
+
+/* === Botão do WhatsApp === */
+
+.whatsapp-button {
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #25d366;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.35s ease;
+    z-index: 999;
+    animation: whatsappPulse 2s infinite;
+}
+
+/* === Ícone === */
+
+.whatsapp-button img {
+    width: 45px;
+}
+
+/* === Hover === */
+
+.whatsapp-button:hover {
+    transform: translateY(-5px) scale(1.08);
+    border-color: #28f404;
+}
+
+/* === Animação de Pulso do Botao do Watzap === */
+
+@keyframes whatsappPulse {
+
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+
+    70% {
+        transform: scale(1.08);
+        box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+
 }
 
 /* =========================
@@ -1047,14 +1152,22 @@ Pegando as classes: ( .footer ) e ( .footer-bottom ) === */
         flex-direction: column;
     }
 
+    /* === Serviços === */
     .servicos-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* === Videos === */
+    .videos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* === Benefícios === */
     .beneficios-grid {
         grid-template-columns: 1fr;
     }
 
+    /* === Footer === */
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1127,6 +1240,11 @@ Pegando as classes: ( .footer ) e ( .footer-bottom ) === */
         grid-template-columns: 1fr;
     }
 
+    /* === Videos === */
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+
     /* === CTA === */
 
     .cta-buttons {
@@ -1157,6 +1275,7 @@ Pegando as classes: ( .footer ) e ( .footer-bottom ) === */
         padding: 60px 0;
     }
 
+    /* === Hero === */
     .section-title {
         font-size: 1.8rem;
     }
@@ -1168,7 +1287,8 @@ Pegando as classes: ( .footer ) e ( .footer-bottom ) === */
     .container {
         width: 95%;
     }
-    
+
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
 }
-
-

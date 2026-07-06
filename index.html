@@ -84,6 +84,10 @@
                         </li>
 
                         <li class="nav-item">
+                            <a href="#videos" class="nav-link"> Vídeos </a>
+                        </li>
+
+                        <li class="nav-item">
                             <a href="#contato" class="nav-link"> Contato </a>
                         </li>
                     </ul>
@@ -144,19 +148,25 @@
 
                     <div class="hero-info">
                         <div class="info-item">
-                            <strong>+3000</strong>
+                            <strong class="counter" data-target="3000"
+                                >0</strong
+                            >
 
                             <span>Clientes Atendidas</span>
                         </div>
 
                         <div class="info-item">
-                            <strong>5★</strong>
+                            <strong class="counter-star" data-target="5"
+                                >0</strong
+                            >
 
                             <span>Avaliação dos Clientes</span>
                         </div>
 
                         <div class="info-item">
-                            <strong>100%</strong>
+                            <strong class="counter-percent" data-target="100"
+                                >0</strong
+                            >
 
                             <span>Atendimento Personalizado</span>
                         </div>
@@ -456,6 +466,82 @@
         </section>
 
         <!-- ========================
+        VÍDEOS
+        ========================= -->
+
+        <section class="videos" id="videos">
+            <div class="container">
+                <!-- Cabeçalho -->
+
+                <div class="section-header">
+                    <span class="section-subtitle"
+                        >Momentos que transformam a beleza</span
+                    >
+
+                    <h2 class="section-title">
+                        Transformações reais que valorizam ainda mais a beleza
+                        de nossas clientes
+                    </h2>
+
+                    <p class="section-description">
+                        Confira alguns momentos especiais, resultados incríveis
+                        e o carinho que dedicamos em cada atendimento.
+                    </p>
+                </div>
+
+                <!-- Grid de Vídeos -->
+
+                <div class="videos-grid">
+                    <!-- Vídeo 01 -->
+
+                    <article class="video-card">
+                        <video
+                            controls
+                            preload="metadata"
+                            poster="./assets/imagens/img-cabelo-01.png"
+                            muted
+                        >
+                            <source
+                                src="./assets/videos/video-01.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </article>
+
+                    <!-- Vídeo 02 -->
+
+                    <article class="video-card">
+                        <video
+                            controls
+                            preload="metadata"
+                            poster="./assets/imagens/img-cabelo-02.png"
+                        >
+                            <source
+                                src="./assets/videos/video-02.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </article>
+
+                    <!-- Vídeo 03 -->
+
+                    <article class="video-card">
+                        <video
+                            controls
+                            preload="metadata"
+                            poster="./assets/imagens/img-cabelo-03.png"
+                        >
+                            <source
+                                src="./assets/videos/video-03.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
         CTA
         ========================= -->
 
@@ -665,14 +751,36 @@
                     <!-- Redes Sociais -->
 
                     <div class="footer-social">
-                        
-
                         <div class="social-links">
-                            <a href="#" aria-label="Instagram"><img src="./assets/icones/icons8-instagram-48.png" alt="imagem do instagram"> </a>
+                            <a
+                                href="https://www.instagram.com/paulokeys.dev?igsh=NDZoYzR4Yzc3YWg5&utm_source=qr"
+                                aria-label="Instagram"
+                                target="_blank"
+                                ><img
+                                    src="./assets/icones/icons8-instagram-48.png"
+                                    alt="imagem do instagram"
+                                />
+                            </a>
 
-                            <a href="#" aria-label="Facebook"><img src="./assets/icones/icons8-facebook-48.png" alt="imagem do faceboock"> </a>
+                            <a href="#" aria-label="Facebook" target="_blank"
+                                ><img
+                                    src="./assets/icones/icons8-facebook-48.png"
+                                    alt="imagem do faceboock"
+                                />
+                            </a>
 
-                            <a href="#" aria-label="WhatsApp"><img src="./assets/icones/icons8-whatsapp-logo-94.png" width="50" alt="imagem do watzap"></a>
+                            <a
+                                href="https://wa.me/5585989792739"
+                                class="botao-whatsapp"
+                                target="_blank"
+                                aria-label="Falar no WhatsApp"
+                            >
+                                <img
+                                    src="./assets/icones/icons8-whatsapp-logo-94.png"
+                                    width="48"
+                                    alt="WhatsApp"
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -682,10 +790,7 @@
                 <div class="footer-bottom">
                     <p>© 2026 Seja Belíssima. Todos os direitos reservados.</p>
 
-                    <p>
-                        Desenvolvido com ❤️ para valorizar a beleza e a
-                        autoestima.
-                    </p>
+                    <p>Desenvolvido por Paulo Ricardo com ❤️</p>
                 </div>
             </div>
         </footer>
@@ -697,6 +802,20 @@
         <button class="btn-topo" id="btn-topo" aria-label="Voltar ao topo">
             ↑
         </button>
+
+        <!-- ========================
+     WHATSAPP FLUTUANTE
+========================= -->
+
+        <a
+            href="https://wa.me/5585989792739"
+            class="whatsapp-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Conversar pelo WhatsApp"
+        >
+            <img src="./assets/icones/icons8-whatsapp-logo-94.png" alt="WhatsApp" />
+        </a>
 
         <!-- ========================
          JAVASCRIPT
